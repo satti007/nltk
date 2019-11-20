@@ -1,0 +1,301 @@
+{'emb_dim': 300, 'emb_path': '../data/embeds/indicnlp/indicnlp.v1.bn.vec', 'full_vocab': True, 'k': 4, 'lang': 'bn', 'max_vocab': 0, 'valid': False}
+
+Reading bn language resources
+	--Resources of classification data are:  News_Articles
+	--Loading News_Articles resource
+		--Classes present are:  state.txt, international.txt, national.txt, kolkata.txt, entertainment.txt, sports.txt
+		--Num of data points in entertainment.txt are: 1492
+		--Num of data points in international.txt are: 664
+		--Num of data points in kolkata.txt are: 5793
+		--Num of data points in national.txt are: 1794
+		--Num of data points in sports.txt are: 1637
+		--Num of data points in state.txt are: 2775
+
+Loading pre-trained word embeddings...
+Loaded 308211 word embeddings.
+The number of OVV words are :52967
+
+Classifying text News_Articles resource
+	--Label distribution in train:  {0: 1176, 1: 512, 2: 4676, 3: 1420, 4: 1330, 5: 2209}
+	--Label distribution in valid:  {0: 145, 1: 77, 2: 550, 3: 215, 4: 166, 5: 263}
+	--Label distribution in test:  {0: 171, 1: 75, 2: 567, 3: 159, 4: 141, 5: 303}
+	--Metrics are accuracy: 0.6935, f1_score: 0.7137
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/fastext/cc.bn.300.vec', 'full_vocab': True, 'k': 4, 'lang': 'bn', 'max_vocab': 1000000, 'valid': False}
+
+Reading bn language resources
+	--Resources of classification data are:  News_Articles
+	--Loading News_Articles resource
+		--Classes present are:  state.txt, international.txt, national.txt, kolkata.txt, entertainment.txt, sports.txt
+		--Num of data points in entertainment.txt are: 1492
+		--Num of data points in international.txt are: 664
+		--Num of data points in kolkata.txt are: 5793
+		--Num of data points in national.txt are: 1794
+		--Num of data points in sports.txt are: 1637
+		--Num of data points in state.txt are: 2775
+
+Loading pre-trained word embeddings...
+Loaded 1468578 word embeddings.
+The number of OVV words are :55839
+
+Classifying text News_Articles resource
+	--Label distribution in train:  {0: 1176, 1: 512, 2: 4676, 3: 1420, 4: 1330, 5: 2209}
+	--Label distribution in valid:  {0: 145, 1: 77, 2: 550, 3: 215, 4: 166, 5: 263}
+	--Label distribution in test:  {0: 171, 1: 75, 2: 567, 3: 159, 4: 141, 5: 303}
+	--Metrics are accuracy: 0.6349, f1_score: 0.6372
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/indicnlp/indicnlp.v1.gu.vec', 'full_vocab': True, 'k': 4, 'lang': 'gu', 'max_vocab': 0, 'valid': False}
+
+Reading gu language resources
+	--Resources of classification data are:  NewsLines_Reviews
+	--Loading NewsLines_Reviews resource
+		--Classes present are:  business.txt, entertainment.txt, tech.txt
+		--Num of data points in business.txt are: 2331
+		--Num of data points in entertainment.txt are: 2905
+		--Num of data points in tech.txt are: 1351
+
+Loading pre-trained word embeddings...
+Loaded 470298 word embeddings.
+The number of OVV words are :1793
+
+Classifying text NewsLines_Reviews resource
+	--Label distribution in train:  {0: 1867, 1: 2324, 2: 1078}
+	--Label distribution in valid:  {0: 238, 1: 293, 2: 128}
+	--Label distribution in test:  {0: 226, 1: 288, 2: 145}
+	--Metrics are accuracy: 0.9014, f1_score: 0.8860
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/fastext/cc.gu.300.vec', 'full_vocab': True, 'k': 4, 'lang': 'gu', 'max_vocab': 1000000, 'valid': False}
+
+Reading gu language resources
+	--Resources of classification data are:  NewsLines_Reviews
+	--Loading NewsLines_Reviews resource
+		--Classes present are:  business.txt, entertainment.txt, tech.txt
+		--Num of data points in business.txt are: 2331
+		--Num of data points in entertainment.txt are: 2905
+		--Num of data points in tech.txt are: 1351
+
+Loading pre-trained word embeddings...
+Loaded 554517 word embeddings.
+The number of OVV words are :2849
+
+Classifying text NewsLines_Reviews resource
+	--Label distribution in train:  {0: 1867, 1: 2324, 2: 1078}
+	--Label distribution in valid:  {0: 238, 1: 293, 2: 128}
+	--Label distribution in test:  {0: 226, 1: 288, 2: 145}
+	--Metrics are accuracy: 0.8483, f1_score: 0.8309
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/indicnlp/indicnlp.v1.ml.vec', 'full_vocab': True, 'k': 4, 'lang': 'ml', 'max_vocab': 0, 'valid': False}
+
+Reading ml language resources
+	--Resources of classification data are:  News_Articles
+	--Loading News_Articles resource
+		--Classes present are:  entertainment.txt, sports.txt, business.txt
+		--Num of data points in business.txt are: 1923
+		--Num of data points in entertainment.txt are: 2184
+		--Num of data points in sports.txt are: 2189
+
+Loading pre-trained word embeddings...
+Loaded 820307 word embeddings.
+The number of OVV words are :2735
+
+Classifying text News_Articles resource
+	--Label distribution in train:  {0: 1551, 1: 1721, 2: 1764}
+	--Label distribution in valid:  {0: 200, 1: 224, 2: 206}
+	--Label distribution in test:  {0: 172, 1: 239, 2: 219}
+	--Metrics are accuracy: 0.9476, f1_score: 0.9464
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/fastext/cc.ml.300.vec', 'full_vocab': True, 'k': 4, 'lang': 'ml', 'max_vocab': 1000000, 'valid': False}
+
+Reading ml language resources
+	--Resources of classification data are:  News_Articles
+	--Loading News_Articles resource
+		--Classes present are:  entertainment.txt, sports.txt, business.txt
+		--Num of data points in business.txt are: 1923
+		--Num of data points in entertainment.txt are: 2184
+		--Num of data points in sports.txt are: 2189
+
+Loading pre-trained word embeddings...
+Loaded 2000000 word embeddings.
+The number of OVV words are :3487
+
+Classifying text News_Articles resource
+	--Label distribution in train:  {0: 1551, 1: 1721, 2: 1764}
+	--Label distribution in valid:  {0: 200, 1: 224, 2: 206}
+	--Label distribution in test:  {0: 172, 1: 239, 2: 219}
+	--Metrics are accuracy: 0.8825, f1_score: 0.8812
+
+Reading ta language resources
+	--Resources of classification data are:  News_Articles
+	--Loading News_Articles resource
+		--Classes present are:  spirituality.txt, tamil-cinema.txt, business.txt
+		--Num of data points in business.txt are: 1954
+		--Num of data points in spirituality.txt are: 1904
+		--Num of data points in tamil-cinema.txt are: 2826
+
+Loading pre-trained word embeddings...
+Loaded 712558 word embeddings.
+The number of OVV words are :3954
+
+Classifying text News_Articles resource
+	--Label distribution in train:  {0: 1567, 1: 1524, 2: 2255}
+	--Label distribution in valid:  {0: 194, 1: 192, 2: 283}
+	--Label distribution in test:  {0: 193, 1: 188, 2: 288}
+	--Metrics are accuracy: 0.9567, f1_score: 0.9550
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/fastext/cc.ta.300.vec', 'full_vocab': True, 'k': 4, 'lang': 'ta', 'max_vocab': 1000000, 'valid': False}
+
+Reading ta language resources
+	--Resources of classification data are:  News_Articles
+	--Loading News_Articles resource
+		--Classes present are:  spirituality.txt, tamil-cinema.txt, business.txt
+		--Num of data points in business.txt are: 1954
+		--Num of data points in spirituality.txt are: 1904
+		--Num of data points in tamil-cinema.txt are: 2826
+
+Loading pre-trained word embeddings...
+Loaded 2000000 word embeddings.
+The number of OVV words are :4241
+
+Classifying text News_Articles resource
+	--Label distribution in train:  {0: 1567, 1: 1524, 2: 2255}
+	--Label distribution in valid:  {0: 194, 1: 192, 2: 283}
+	--Label distribution in test:  {0: 193, 1: 188, 2: 288}
+	--Metrics are accuracy: 0.9073, f1_score: 0.9037
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/indicnlp/indicnlp.v1.te.vec', 'full_vocab': True, 'k': 4, 'lang': 'te', 'max_vocab': 0, 'valid': False}
+
+Reading te language resources
+	--Resources of classification data are:  NewsLines_Reviews, Song_Reviews, Movie_Reviews, Product_Reviews, Book_Reviews
+	--Loading Book_Reviews resource
+		--Classes present are:  positive.txt, negative.txt
+		--Num of data points in negative.txt are: 102
+		--Num of data points in positive.txt are: 100
+	--Loading Movie_Reviews resource
+		--Classes present are:  negative.txt, positive.txt
+		--Num of data points in negative.txt are: 132
+		--Num of data points in positive.txt are: 135
+	--Loading NewsLines_Reviews resource
+		--Classes present are:  neutral.txt, positive.txt, negative.txt
+		--Num of data points in negative.txt are: 1442
+		--Num of data points in neutral.txt are: 2479
+		--Num of data points in positive.txt are: 1491
+	--Loading Product_Reviews resource
+		--Classes present are:  negative.txt, positive.txt
+		--Num of data points in negative.txt are: 101
+		--Num of data points in positive.txt are: 100
+	--Loading Song_Reviews resource
+		--Classes present are:  positive.txt, negative.txt
+		--Num of data points in negative.txt are: 108
+		--Num of data points in positive.txt are: 228
+
+Loading pre-trained word embeddings...
+Loaded 720339 word embeddings.
+The number of OVV words are :17795
+
+Classifying text Book_Reviews resource
+	--Label distribution in train:  {0: 81, 1: 79}
+	--Label distribution in valid:  {0: 10, 1: 11}
+	--Label distribution in test:  {0: 11, 1: 10}
+	--Metrics are accuracy: 0.7619, f1_score: 0.6667
+
+Classifying text Movie_Reviews resource
+	--Label distribution in train:  {0: 107, 1: 106}
+	--Label distribution in valid:  {0: 13, 1: 14}
+	--Label distribution in test:  {0: 12, 1: 15}
+	--Metrics are accuracy: 0.7407, f1_score: 0.7879
+
+Classifying text NewsLines_Reviews resource
+	--Label distribution in train:  {0: 1169, 1: 1965, 2: 1194}
+	--Label distribution in valid:  {0: 147, 1: 256, 2: 139}
+	--Label distribution in test:  {0: 126, 1: 258, 2: 158}
+	--Metrics are accuracy: 0.4982, f1_score: 0.4803
+
+Classifying text Product_Reviews resource
+	--Label distribution in train:  {0: 81, 1: 79}
+	--Label distribution in valid:  {0: 10, 1: 11}
+	--Label distribution in test:  {0: 10, 1: 10}
+	--Metrics are accuracy: 0.8000, f1_score: 0.8182
+
+Classifying text Song_Reviews resource
+	--Label distribution in train:  {0: 89, 1: 179}
+	--Label distribution in valid:  {0: 13, 1: 21}
+	--Label distribution in test:  {0: 6, 1: 28}
+	--Metrics are accuracy: 0.8529, f1_score: 0.9091
+
+{'emb_dim': 300, 'emb_path': '../data/embeds/fastext/cc.te.300.vec', 'full_vocab': True, 'k': 4, 'lang': 'te', 'max_vocab': 1000000, 'valid': False}
+
+Reading te language resources
+	--Resources of classification data are:  NewsLines_Reviews, Song_Reviews, Movie_Reviews, Product_Reviews, Book_Reviews
+	--Loading Book_Reviews resource
+		--Classes present are:  positive.txt, negative.txt
+		--Num of data points in negative.txt are: 102
+		--Num of data points in positive.txt are: 100
+	--Loading Movie_Reviews resource
+		--Classes present are:  negative.txt, positive.txt
+		--Num of data points in negative.txt are: 132
+		--Num of data points in positive.txt are: 135
+	--Loading NewsLines_Reviews resource
+		--Classes present are:  neutral.txt, positive.txt, negative.txt
+		--Num of data points in negative.txt are: 1442
+		--Num of data points in neutral.txt are: 2479
+		--Num of data points in positive.txt are: 1491
+	--Loading Product_Reviews resource
+		--Classes present are:  negative.txt, positive.txt
+		--Num of data points in negative.txt are: 101
+		--Num of data points in positive.txt are: 100
+	--Loading Song_Reviews resource
+		--Classes present are:  positive.txt, negative.txt
+		--Num of data points in negative.txt are: 108
+		--Num of data points in positive.txt are: 228
+
+Loading pre-trained word embeddings...
+Loaded 1878288 word embeddings.
+The number of OVV words are :18248
+
+Classifying text Book_Reviews resource
+	--Label distribution in train:  {0: 81, 1: 79}
+	--Label distribution in valid:  {0: 10, 1: 11}
+	--Label distribution in test:  {0: 11, 1: 10}
+	--Metrics are accuracy: 0.8095, f1_score: 0.7500
+
+Classifying text Movie_Reviews resource
+	--Label distribution in train:  {0: 107, 1: 106}
+	--Label distribution in valid:  {0: 13, 1: 14}
+	--Label distribution in test:  {0: 12, 1: 15}
+	--Metrics are accuracy: 0.8889, f1_score: 0.9032
+
+Classifying text NewsLines_Reviews resource
+	--Label distribution in train:  {0: 1169, 1: 1965, 2: 1194}
+	--Label distribution in valid:  {0: 147, 1: 256, 2: 139}
+	--Label distribution in test:  {0: 126, 1: 258, 2: 158}
+	--Metrics are accuracy: 0.4852, f1_score: 0.4638
+
+Classifying text Product_Reviews resource
+	--Label distribution in train:  {0: 81, 1: 79}
+	--Label distribution in valid:  {0: 10, 1: 11}
+	--Label distribution in test:  {0: 10, 1: 10}
+	--Metrics are accuracy: 0.4500, f1_score: 0.4762
+
+Classifying text Song_Reviews resource
+	--Label distribution in train:  {0: 89, 1: 179}
+	--Label distribution in valid:  {0: 13, 1: 21}
+	--Label distribution in test:  {0: 6, 1: 28}
+	--Metrics are accuracy: 0.6471, f1_score: 0.7391
+
+python main.py --lang bn --emb_path ../data/embeds/indicnlp/indicnlp.v1.bn.vec --full_vocab True --max_vocab 0 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################python main.py --lang bn --emb_path ../data/embeds/fastext/cc.bn.300.vec --full_vocab True --max_vocab 1000000 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################python main.py --lang gu --emb_path ../data/embeds/indicnlp/indicnlp.v1.gu.vec --full_vocab True --max_vocab 0 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################python main.py --lang gu --emb_path ../data/embeds/fastext/cc.gu.300.vec --full_vocab True --max_vocab 1000000 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################
+python main.py --lang ml --emb_path ../data/embeds/indicnlp/indicnlp.v1.ml.vec --full_vocab True --max_vocab 0 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################
+python main.py --lang ml --emb_path ../data/embeds/fastext/cc.ml.300.vec --full_vocab True --max_vocab 1000000 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################
+python main.py --lang ta --emb_path ../data/embeds/indicnlp/indicnlp.v1.ta.vec --full_vocab True --max_vocab 0 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################
+python main.py --lang ta --emb_path ../data/embeds/fastext/cc.ta.300.vec --full_vocab True --max_vocab 1000000 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################
+python main.py --lang te --emb_path ../data/embeds/indicnlp/indicnlp.v1.te.vec --full_vocab True --max_vocab 0 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################
+python main.py --lang te --emb_path ../data/embeds/fastext/cc.te.300.vec --full_vocab True --max_vocab 1000000 --emb_dim 300 --k 4 --valid False
+################################################################################################################################################
