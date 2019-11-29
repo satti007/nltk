@@ -1,5 +1,7 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+"""Data preprocessing steps."""
+
+# !/usr/bin/env python
+#  -*- coding: utf-8 -*-
 
 import sys
 import warnings
@@ -46,3 +48,18 @@ def sent_split(text, lang):
     returns list of sentences
     """
     return sentence_tokenize.sentence_split(text, lang)
+
+
+def test_fun(text, lang):
+    """Testing function."""
+    sentences = sent_split(text, lang)
+    print('Number of sentences in text: ', len(sentences))
+    for sent in sentences:
+        tokens = preprocess_sent(sent, lang)
+        print(tokens)
+
+
+if __name__ == '__main__':
+    text = 'దేశంపట్ల కానీ, ప్రజలపట్ల కానీ బాధ్యత కనిపించదు.'
+    lang = 'te'
+    test_fun(text, lang)

@@ -1,0 +1,7 @@
+junk/
+data/embeds/*
+src/utils/*
+
+*pyc
+
+run.sh

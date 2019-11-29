@@ -1,5 +1,4 @@
 """Getting and parsing the argumnets."""
-
 import pprint
 import argparse
 from data_prep import text2vec, data_splitting, get_label_dist

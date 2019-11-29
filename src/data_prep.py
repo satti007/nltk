@@ -1,13 +1,22 @@
 """File to read the datasets."""
 
 import os
+import re
 import numpy as np
-from embeddings import read_txt_embeddings
+from load_embeddings import read_txt_embeddings
 from data_preprocess import sent_split, preprocess_sent
 from sklearn.model_selection import train_test_split
 
 seperator = '__________________________\n'
 data_dir = '../data/classification_datasets/'
+re_valid = {'bn': re.compile(u'[^\u0980-\u09FF]+'),
+            'gu': re.compile(u'[^\u0A80-\u0AFF]+'),
+            'ml': re.compile(u'[^\u0D00-\u0D7F]+'),
+            'mr': re.compile(u'[^\u0900-\u097F]+'),
+            'ta': re.compile(u'[^\u0B80-\u0BFF]+'),
+            'te': re.compile(u'[^\u0C00-\u0C7F]+'),
+            'hi': re.compile(u'[^\u0900-\u097F]+')
+            }
 
 
 def read_data(lang):
@@ -93,10 +102,12 @@ def text2vec(args):
                 try:
                     vectors.append(embeddings[word2id[w]])
                 except KeyError:
-                    if w in OVV_words:
-                        OVV_words[w] += 1
-                    else:
-                        OVV_words[w] = 1
+                    w1 = re_valid[args.lang].sub(r'', w)
+                    if len(w1) == len(w):
+                        if w in OVV_words:
+                            OVV_words[w] += 1
+                        else:
+                            OVV_words[w] = 1
 
                     continue
 
@@ -128,15 +139,18 @@ def data_splitting(data, labels, fraction):
 
 
 def get_label_dist(labels):
+    """Get label distribution."""
     values_counts = np.unique(labels, return_counts=True)
     values, counts = values_counts[0], values_counts[1]
     val2c = {v: c for v, c in zip(values, counts)}
 
     return val2c
 
+
 # def test():
 #     """Testing read_data function."""
-#     datasets = text2vec('te', ['../data/embeds/indicnlp.v1.te.vec', True, 100])
+#     datasets = text2vec('te', ['../data/embeds/indicnlp.v1.te.vec',
+#                        True, 100])
 #     for data_folder in datasets:
 #         print(data_folder)
 #         idx2label = datasets[data_folder]['labels']
