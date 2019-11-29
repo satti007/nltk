@@ -11,5 +11,5 @@
   --full_vocab FULL_VOCAB  If all embeddings to be loaded<br/>
   --max_vocab MAX_VOCAB    Max number of embeddings to load<br/>
   --emb_dim EMB_DIM        Dimension of the embeddings<br/>
-  --k K                    Number of neighbors to use for voting
+  --k K                    Number of neighbors to use for voting<br/>
   --valid VALID            if true get results on validaion data, useful for experimentation
