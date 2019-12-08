@@ -21,8 +21,16 @@ parser.add_argument('--max_vocab', type=int, default=200000,
 parser.add_argument('--emb_dim', type=int, default=300,
                     help='Dimension of the embeddings')
 
+parser.add_argument('--model', type=str, default='knn',
+                    choices=['knn', 'nn'],
+                    help='Model to used for classification')
+
 parser.add_argument('--k', type=int, default=5,
                     help='Number of neighbors to use for voting')
+
+parser.add_argument('--nn_dims', type=str, default='0',
+                    help="""Dimensions of hidden layers of nn.
+                    Format: hidden_layer1_dim, hidden_layer2_dim""")
 
 parser.add_argument('--valid', type=str, default=False,
                     help="""if true get results on validaion data,
@@ -31,6 +39,13 @@ parser.add_argument('--valid', type=str, default=False,
 args = parser.parse_args()
 args.full_vocab = True if 'true' in args.full_vocab.lower() else False
 args.valid = True if 'true' in args.valid.lower() else False
+
+if args.model == 'nn':
+    args.nn_dims = args.nn_dims.split(',')
+    args.nn_dims = [int(dim.strip()) for dim in args.nn_dims]
+
+emb_src = args.emb_path.split('/')[-2]
+
 pprint.pprint(vars(args), width=10000)
 print()
 
@@ -48,12 +63,11 @@ for data_folder in datasets:
     print('\t--Label distribution in valid: ', get_label_dist(y_valid))
     print('\t--Label distribution in test: ', get_label_dist(y_test))
 
-    if args.valid:
-        accuracy, f1_value = get_results(X_train, X_valid, y_train, y_valid,
-                                         idx2vec, args.emb_dim, args.k)
-    else:
-        accuracy, f1_value = get_results(X_train, X_test, y_train, y_test,
-                                         idx2vec, args.emb_dim, args.k)
+    accuracy, f1_value = get_results(X_train, X_valid, X_test,
+                                     y_train, y_valid, y_test,
+                                     idx2vec, args.emb_dim, args.valid,
+                                     args.lang, emb_src,
+                                     args.model, args.k, args.nn_dims)
 
     print('\t--Metrics are accuracy: {:.4f}, f1_score: {:.4f}\n'.format(
         accuracy, f1_value))
